@@ -1,0 +1,28 @@
+###
+GET http://localhost:9000/api/usuarios HTTP/1.1
+###
+POST http://localhost:9000/api/usuarios HTTP/1.1
+Content-Type: application/json
+
+{
+    "usu_id":"4",
+    "usu_email":"ejemplo3@gmail.com",
+    "usu_clave": "admin",
+    "usu_nombres": "Juan",
+    "usu_apellidos": "Moyano"
+
+}
+
+###
+DELETE http://localhost:9000/api/usuarios/3 HTTP/1.1
+###
+PUT http://localhost:9000/api/usuarios/usu_id/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "usu_id":"3",
+    "usu_email":"ejemplo32@gmail.com",
+    "usu_clave": "admin",
+    "usu_nombres": "Alonso",
+    "usu_apellidos": "Moyano"
+}
